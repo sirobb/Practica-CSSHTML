@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilosNavbar.css">
+    <link rel="stylesheet" href="css/cards.css">
     <!-- <link rel="stylesheet" href="css/footer.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -13,6 +14,7 @@
 </head>
 
 <body>
+    <!-- barra navegacion -->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -31,19 +33,99 @@
             </li>
             <li><a href="#">Cerrar Sesion</a></li>
         </ul>
-        <!-- <footer class="footer">
-            <div class="container">
-                <ul class="flex-row">
-                    <li><a href="#">Novedades</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Peliculas</a></li>
-                    <li><a href="#">Cerrar Sesion</a></li>
-                </ul>
-                <p>&copy; 2021 BorisAlarcon</p>
-            </div>
-        </footer> -->
     </nav>
 
+    <!-- fin barra navegacion -->
+    <h1>Escoje lo que quieres ver</h1>
+    <main class="main">
+
+        <section id="trending" class="container">
+
+            <article class="mycard">
+                <input class="star" type="checkbox" title="bookmark page">
+                <a href="detail.html">
+                    <div class="cimg">
+                        <img src="img/cover/cover1.jpg" alt="imagen">
+                        
+                    </div>
+                    <div class="cdetail">
+                        <div class="title">El Lago Encantado</div>
+                        <div class="meta">
+                            <span class="rating">4.5/5</span>
+                            <span class="age">PG-18</span>
+                            <span class="pub-date">2020</span>
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus corrupti enim officiis 
+                        </div>
+                        
+                    </div>
+                </a>
+            </article>
+            <article class="mycard">
+                <input class="star" type="checkbox" title="bookmark page">
+                <div class="cimg">
+                    <img src="img/cover/cover2.jpg" alt="imagen">
+                </div>
+                <div class="cdetail">
+                    <h2>El Globo que exploto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam doloribus. At molestiae quos,
+                        ab repellat nesciunt.
+                    </p>
+                </div>
+
+            </article>
+            <article class="mycard">
+                <input class="star" type="checkbox" title="bookmark page">
+                <div class="cimg">
+                    <img src="img/cover/cover3.jpg" alt="imagen">
+                </div>
+                <div class="cdetail">
+                    <h2>La Mano Siniestra</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam doloribus. At molestiae quos,
+                        ab repellat nesciunt.
+                    </p>
+                </div>
+            </article>
+            <article class="mycard">
+                <input class="star" type="checkbox" title="bookmark page">
+                <div class="cimg">
+                    <img src="img/cover/cover4.jpg" alt="imagen">
+                </div>
+                <div class="cdetail">
+                    <h2>La Noche Encantada</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam doloribus. At molestiae quos,
+                        ab repellat nesciunt.
+                    </p>
+                </div>
+            </article>
+            <article class="mycard">
+                <input class="star" type="checkbox" title="bookmark page">
+                <div class="cimg">
+                    <img src="img/cover/cover1.jpg" alt="imagen">
+                </div>
+                <div class="cdetail">
+                    <h2>El Lago Perdido</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam doloribus. At molestiae quos,
+                        ab repellat nesciunt.
+                    </p>
+                </div>
+            </article>
+            <article class="mycard">
+                <input class="star" type="checkbox" title="bookmark page">
+                <div class="cimg">
+                    <img src="img/cover/cover1.jpg" alt="imagen">
+                </div>
+                <div class="cdetail">
+                    <h2>El Lago Perdido</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam doloribus. At molestiae quos,
+                        ab repellat nesciunt.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+    </main>
 
 </body>
 
