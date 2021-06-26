@@ -52,7 +52,7 @@ body {
 .container{
     display: grid;
     grid-template :
-    "mycard mycard mycard mycard"    
+    "mycard mycard mycard"    
     ;
 }
 
@@ -78,6 +78,16 @@ body {
         "section"
         "footer";
 }
+.navbar{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "logo menu";
+    
+}
+.menu{
+    grid-row-end: auto;
+}
 .portada{
     height: 400px;
 }
@@ -86,53 +96,49 @@ body {
     margin-bottom: 10px;
 }
 
-@media (min-width: 600px) {
-    .grid-container {
-        /* grid-template-columns: 500px auto;
-        grid-template-rows: 100px auto 100px;
-        grid-template-areas:
-            "navbar navbar"
-            "sidebar main"
-            "footer footer"; */
+@media (min-width: 520px) {
+    .grid-container {        
 
             grid-template:
-            "navbar navbar" 100px
+            "navbar " 100px
             "sidebar sidebar" auto
             "main main"
             "section section" 300px
-            "footer footer" 100px /
+            "footer footer" auto /
             500px auto;
     }
 }
 
-@media (min-width: 320px) {
-    .grid-container {
-        /* grid-template-columns: 500px auto;
-        grid-template-rows: 100px auto 100px;
-        grid-template-areas:
-            "navbar navbar"
-            "sidebar main"
-            "footer footer"; */
-
+@media (min-width: 768px) {
+    .grid-container {       
             grid-template:
             "navbar navbar" 100px
-            "sidebar sidebar" auto
-            "main main"
-            "section section" 300px
-            "footer footer" 100px /
+            "sidebar main" auto            
+            "section " 300px
+            "footer " auto /
             500px auto;
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 950px) {
     .grid-container {
 
             grid-template:
-            "navbar navbar navbar" 200px
-            "sidebar main main" auto
-            "section section section" 300px
-            "footer footer footer" 100px /
+            "navbar navbar " 200px
+            "sidebar main " auto
+            "section section " 300px
+            "footer footer " 100px /
             500px auto;
     }
+}
+
+@media (min-width: 540){
+    .navbar{
+        grid-template-areas:
+        "logo logo"
+        "menu menu"
+        ;
+    }
+    
 }
 

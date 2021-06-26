@@ -60,6 +60,13 @@ a.active, a:hover{
 #check{
     display: none;
 }
+/* agregado recientemente */
+/* nav #icon{
+    color: white;
+    font-size: 30px;
+} */
+/* fin del agregado */
+
 
 @media (max-width: 952px){
     label.logo{
