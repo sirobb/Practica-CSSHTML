@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: monospace;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+.grid-container>* {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar{
+    grid-area: navbar;
+}
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #8c96a0;
+}
+
+.container{
+    display: grid;
+    grid-template :
+    "mycard mycard mycard"    
+    ;
+}
+.grid-container{
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+    "navbar navbar" 
+    "header header"
+    "main main" 
+    "footer footer" 
+}
+
+@media (min-width: 500px) {
+    .grid-container {        
+
+            grid-template:
+            "navbar " 100px
+            "header " auto
+            "main"            
+            "footer" auto /
+            500px auto;
+    }
+}
+@media (min-width: 360px) {
+    .grid-container {        
+
+            grid-template:
+            "navbar " 100px
+            "header " auto
+            "main"            
+            "footer" auto /
+            500px auto;
+    }
+}
+/* @media (min-width: 320px) {
+    .grid-container {        
+
+            grid-template:
+            "navbar " 100px
+            "header " auto
+            "main"            
+            "footer" auto /
+            500px auto;
+    }
+} */
+
+@media (min-width: 768px) {
+    .grid-container {       
+            grid-template:
+            "navbar navbar" 100px
+            "header header" auto
+            "main main"                    
+            "footer " auto /
+            500px auto;
+    }
+}
+
+
+@media (min-width: 950px) {
+    .grid-container {        
+        
+            grid-template:
+            "navbar navbar" 
+            "header header" 100px
+            "main main"            
+            "footer footer" auto /
+            500px auto;
+    }
+}

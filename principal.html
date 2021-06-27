@@ -6,25 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilosNavbar.css">
+    <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/cards.css">
-    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>Pantalla Principal</title>
+    <title>Principal</title>
 </head>
 
-<body>
+<body class="grid-container">
     <!-- barra navegacion -->
-    <nav>
+    <nav class="navbar">
         <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
+
         <label class="logo">Netflex</label>
-        <ul>
+        <ul class="menu">
             <li><a class="active" href="#">Novedades</a></li>
-            <li><a href="#">Series</a></li>
-            <li><a href="#">Peliculas</a></li>
+            <li><a href="principal.html">Series</a></li>
+            <li><a href="detail.html">Peliculas</a></li>
             <li>
                 <form action="">
                     <input type="search" name="" size="4" maxlength="4">
@@ -33,12 +32,16 @@
             </li>
             <li><a href="#">Cerrar Sesion</a></li>
         </ul>
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
     </nav>
 
     <!-- fin barra navegacion -->
-    <h1>Escoje lo que quieres ver</h1>
+    <header class="header">
+        <h1>Elije lo que quieras!</h1>
+    </header>
     <main class="main">
-
         <section id="trending" class="container">
 
             <article class="mycard">
@@ -46,8 +49,9 @@
                 <a href="detail.html">
                     <div class="cimg">
                         <img src="img/cover/cover1.jpg" alt="imagen">
-                        
+
                     </div>
+                </a>
                     <div class="cdetail">
                         <div class="title">El Lago Encantado</div>
                         <div class="meta">
@@ -56,77 +60,127 @@
                             <span class="pub-date">2020</span>
                         </div>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus corrupti enim officiis 
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         </div>
-                        
+
+                    </div>                
+            </article>
+            <article class="mycard">
+                <input class="star" type="checkbox" title="bookmark page">
+                <a href="detail.html">
+                    <div class="cimg">
+                        <img src="img/cover/cover2.jpg" alt="imagen">
+
                     </div>
                 </a>
-            </article>
-            <article class="mycard">
-                <input class="star" type="checkbox" title="bookmark page">
-                <div class="cimg">
-                    <img src="img/cover/cover2.jpg" alt="imagen">
-                </div>
-                <div class="cdetail">
-                    <h2>El Globo que exploto</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam doloribus. At molestiae quos,
-                        ab repellat nesciunt.
-                    </p>
-                </div>
+                    <div class="cdetail">
+                        <div class="title">El Lago Encantado</div>
+                        <div class="meta">
+                            <span class="rating">4.5/5</span>
+                            <span class="age">PG-18</span>
+                            <span class="pub-date">2020</span>
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        </div>
 
+                    </div>                
             </article>
             <article class="mycard">
                 <input class="star" type="checkbox" title="bookmark page">
-                <div class="cimg">
-                    <img src="img/cover/cover3.jpg" alt="imagen">
-                </div>
-                <div class="cdetail">
-                    <h2>La Mano Siniestra</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam doloribus. At molestiae quos,
-                        ab repellat nesciunt.
-                    </p>
-                </div>
+                <a href="detail.html">
+                    <div class="cimg">
+                        <img src="img/cover/cover3.jpg" alt="imagen">
+
+                    </div>
+                </a>
+                    <div class="cdetail">
+                        <div class="title">El Lago Encantado</div>
+                        <div class="meta">
+                            <span class="rating">4.5/5</span>
+                            <span class="age">PG-18</span>
+                            <span class="pub-date">2020</span>
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        </div>
+
+                    </div>                
             </article>
             <article class="mycard">
                 <input class="star" type="checkbox" title="bookmark page">
-                <div class="cimg">
-                    <img src="img/cover/cover4.jpg" alt="imagen">
-                </div>
-                <div class="cdetail">
-                    <h2>La Noche Encantada</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam doloribus. At molestiae quos,
-                        ab repellat nesciunt.
-                    </p>
-                </div>
+                <a href="detail.html">
+                    <div class="cimg">
+                        <img src="img/cover/cover4.jpg" alt="imagen">
+
+                    </div>
+                </a>
+                    <div class="cdetail">
+                        <div class="title">El Lago Encantado</div>
+                        <div class="meta">
+                            <span class="rating">4.5/5</span>
+                            <span class="age">PG-18</span>
+                            <span class="pub-date">2020</span>
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        </div>
+
+                    </div>                
             </article>
             <article class="mycard">
                 <input class="star" type="checkbox" title="bookmark page">
-                <div class="cimg">
-                    <img src="img/cover/cover1.jpg" alt="imagen">
-                </div>
-                <div class="cdetail">
-                    <h2>El Lago Perdido</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam doloribus. At molestiae quos,
-                        ab repellat nesciunt.
-                    </p>
-                </div>
+                <a href="detail.html">
+                    <div class="cimg">
+                        <img src="img/cover/cover3.jpg" alt="imagen">
+
+                    </div>
+                </a>
+                    <div class="cdetail">
+                        <div class="title">El Lago Encantado</div>
+                        <div class="meta">
+                            <span class="rating">4.5/5</span>
+                            <span class="age">PG-18</span>
+                            <span class="pub-date">2020</span>
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        </div>
+
+                    </div>                
             </article>
             <article class="mycard">
                 <input class="star" type="checkbox" title="bookmark page">
-                <div class="cimg">
-                    <img src="img/cover/cover1.jpg" alt="imagen">
-                </div>
-                <div class="cdetail">
-                    <h2>El Lago Perdido</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam doloribus. At molestiae quos,
-                        ab repellat nesciunt.
-                    </p>
-                </div>
+                <a href="detail.html">
+                    <div class="cimg">
+                        <img src="img/cover/cover1.jpg" alt="imagen">
+
+                    </div>
+                </a>
+                    <div class="cdetail">
+                        <div class="title">El Lago Encantado</div>
+                        <div class="meta">
+                            <span class="rating">4.5/5</span>
+                            <span class="age">PG-18</span>
+                            <span class="pub-date">2020</span>
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        </div>
+
+                    </div>                
             </article>
 
         </section>
     </main>
 
+    <footer class="footer">
+        <ul class="legal-links">
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Condiciones de uso</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
